@@ -1,0 +1,67 @@
+@font-face{  
+  font-family: 'Bahnschrift'; 
+  src: url("../fonts/Bahnschrift/Bahnschrift.eot");                                    /* IE9 Compat Modes */ 
+  src: url("../fonts/Bahnschrift/Bahnschrift.eot?#iefix") format('embedded-opentype'), /* IE6-IE8 */ 
+       url("../fonts/Bahnschrift/Bahnschrift.woff2") format('woff2'),                  /* Новейшие браузеры */ 
+       url("../fonts/Bahnschrift/Bahnschrift.woff") format('woff'),                   /* Новые браузеры и IE9+ */ 
+       url("../fonts/Bahnschrift/Bahnschrift.ttf")  format('truetype'),                /* Старые Safari, Android, iOS */ 
+       url("../fonts/Bahnschrift/Bahnschrift.svg#svgFontName") format('svg');          /* Древние Safari, iOS, Android */ 
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+@font-face{  
+  font-family: 'FugazOne'; 
+  src: url("../fonts/FugazOne/FugazOne.eot");                                     
+  src: url("../fonts/FugazOne/FugazOne.eot?#iefix") format('embedded-opentype'), 
+       url("../fonts/FugazOne/FugazOne.woff2") format('woff2'),                  
+       url("../fonts/FugazOne/FugazOne.woff") format('woff'),                   
+       url("../fonts/FugazOne/FugazOne.ttf")  format('truetype'),                 
+       url("../fonts/FugazOne/FugazOne.svg#svgFontName") format('svg');          
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+@font-face{
+  font-family: 'PTSans';
+  src:  url('../fonts/PTSans/PTSans-Regular.eot');
+  src:  url('../fonts/PTSans/PTSans-Regular.eot#iefix') format('embedded-opentype'),
+  url('../fonts/PTSans/PTSans-Regular.woff') format('woff'),
+  url('../fonts/PTSans/PTSans-Regular.ttf') format('truetype'),
+  url('../fonts/PTSans/PTSans-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'PTSans';
+  src:  url('../fonts/PTSans/PTSans-Italic.eot');
+  src:  url('../fonts/PTSans/PTSans-Italic.eot#iefix') format('embedded-opentype'),
+  url('../fonts/PTSans/PTSans-Italic.woff') format('woff'),
+  url('../fonts/PTSans/PTSans-Italic.ttf') format('truetype'),
+  url('../fonts/PTSans/PTSans-Italic.svg') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face{
+  font-family: 'PTSans';
+  src:  url('../fonts/PTSans/PTSans-Bold.eot');
+  src:  url('../fonts/PTSans/PTSans-Bold.eot#iefix') format('embedded-opentype'),
+  url('../fonts/PTSans/PTSans-Bold.woff') format('woff'),
+  url('../fonts/PTSans/PTSans-Bold.ttf') format('truetype'),
+  url('../fonts/PTSans/PTSans-Bold.svg') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'PTSans';
+  src:  url('../fonts/PTSans/PTSans-BoldItalic.eot');
+  src:  url('../fonts/PTSans/PTSans-BoldItalic.eot#iefix') format('embedded-opentype'),
+  url('../fonts/PTSans/PTSans-BoldItalic.woff') format('woff'),
+  url('../fonts/PTSans/PTSans-BoldItalic.ttf') format('truetype'),
+  url('../fonts/PTSans/PTSans-BoldItalic.svg') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}

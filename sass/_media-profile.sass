@@ -1,0 +1,117 @@
+@media screen and (max-width: 1280px)
+    html
+        font-size: 0.06vw
+        overflow-x: hidden
+
+    footer
+        height: unset
+        font-size: 20rem
+    .contacts-footer-container
+        margin-top: 1vw
+
+    .account-block
+        min-height: 80vh
+        background-size: auto 100%
+        background-position-x: 50%
+        & .main, .change, .logout
+            height: 50vh
+            width: 70vw
+            right: -5vw
+            & .info
+                bottom: 30%
+                &:before
+                    width: 110%
+                    left: -5%
+    .greeting
+        top: 20%
+
+    .lines
+        height: 7vw
+        width: 7vw
+        bottom: 25%
+        right: 20%
+        .line
+            height: 8px
+        .line.active-line
+            height: 10px
+
+    .btns-container-account
+        top: unset
+        left: 1vw
+        & div
+            width: 20vw
+            height: 11vw
+
+    .change-email, .change-full-name, .change-password
+        .container
+            .close-edit-window, .submit
+                right: 1.5625vw
+                bottom: 1.5625vw
+                background-color: $body-bg-color
+                border-radius: 0
+                border: none
+                width: 15vw
+                height: 5vw
+                cursor: pointer
+                transition: box-shadow 0.65s
+                font-family: 'Bahnschrift', sans-serif
+                font-size: 30rem
+            .close-edit-window
+                left: 1.5625vw
+
+    .errors
+        bottom: 25%
+        top: unset
+        right: 15%
+
+@media screen and (max-width: 992px)
+    html
+        font-size: 0.1vw
+        overflow-x: hidden
+    .top-nav
+        .logo
+            font-size: 65rem
+            .logo-img
+                height: 6vw
+                width: 6vw
+    .menu
+        ul
+            padding-left: 0
+            li
+                display: inline-block
+                a
+                    font-size: 20rem
+                &:first-child
+                    margin-left: 0
+
+
+    footer
+        height: 22vw
+        flex-direction: column
+        .footer-section
+            width: 100%
+            align-items: center
+            &:after
+                display: block
+                height: 1px
+                width: 90%
+                right: unset
+                bottom: 0
+        .contacts-footer
+            .contacts-title
+                position: absolute
+                left: 15vw
+                top: 28%
+        .social-footer
+            height: 6vw
+            p
+                position: absolute
+                left: 15vw
+                top: 16%
+            a
+                position: absolute
+                top: 16%
+        .menu-footer
+            width: 50%
+            ul
+                flex-direction: row

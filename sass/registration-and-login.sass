@@ -1,0 +1,439 @@
+@import "colors"
+@import "fonts"
+
+html
+	font-size: 0.0520833333333vw
+
+body
+	width: 100%
+	margin: 0
+	position: relative
+
+input
+	outline: none
+
+.top-nav
+	width: 100%
+	height: 6.77083333333vw
+	background-color: white
+	box-shadow: 0 4px 25px black
+	z-index: 3
+	position: relative
+	top: 0
+	.container-top-nav
+		height: 100%
+		padding: 0 8.4375vw
+		display: flex
+		justify-content: space-between
+		align-items: center
+		a
+			text-decoration: none
+			color: $main-color
+
+.menu
+	ul
+		list-style: none
+		li
+			display: inline
+			a
+				text-transform: uppercase
+				font-family: 'PTSans', sans-serif
+				font-weight: normal
+				font-style: normal
+				font-size: 0.729166666667vw
+				margin-left: 5.52083333333vw
+				position: relative
+				&.menu-items:after
+					content: ''
+					display: inline-block
+					height: 1px
+					width: calc(100% + 4px)
+					background: #000
+					left: -2px
+					bottom: -5px
+					position: absolute
+					transform: scale(0)
+					transition: all 0.65s
+				&:hover
+					&:after
+						transform: scale(1)
+			&:first-child
+				a
+					margin-left: 1vw
+.logo
+	font-size: 3.75vw
+	font-family: 'Bahnschrift', sans-serif
+	display: flex
+	align-items: center
+	text-decoration: none
+	color: $main-color
+	position: relative
+	.to
+		color: #000
+	&:before
+		content: ''
+		display: inline-block
+		position: absolute
+		left: -1.14583333333vw
+		height: 3.54166666667vw
+		width: 1px
+		background: #000
+		transform: scale(0)
+		transition: all 0.65s
+	&:hover
+		&:before
+			transform: scale(1)
+.logo-img
+	height: 3.54166666667vw
+	width: 3.54166666667vw
+	margin-right: 3rem
+	image
+		height: 3.54166666667vw
+		width: 3.54166666667vw
+
+
+
+.registration-and-login
+	height: 47.8125vw
+	width: 100%
+	background-image: url(../img/bg-image-registration-and-login.jpg)
+	background-size: 100% 100%
+	display: flex
+	align-items: center
+.login-block, .registration-block
+	width: 52.3958333333vw
+	height: 33.59375vw
+	background-color: #fff
+	margin-left: 6.875vw
+	position: absolute
+	display: none
+	border: 1px solid #D9D9D9
+	box-shadow: 10px 10px 40px #000
+	& h3
+		padding: 0
+		font-family: 'Bahnschrift', sans-serif
+		font-size: 50rem
+		line-height: 60rem
+		color: $main-color
+		margin: 2.39583333333vw 0 0 4.0625vw
+.triangle-on-corner
+	border: 2.23958333333vw solid transparent
+	border-top: 2.23958333333vw solid $main-color
+	border-right: 2.23958333333vw solid $main-color
+	position: absolute
+	right: -1px
+	top: -1px
+
+.mail, .mail-reg
+	font-family: 'Bahnschrift', sans-serif
+	font-size: 25rem
+	line-height: 30rem
+	color: #1e1e1e
+
+	margin-top: 2.29166666667vw
+	margin-left: 3.125vw
+	& input
+		width: 17.0833333333vw
+		height: 2.03125vw
+		background-color: #fafafa
+		border-radius: 20px
+		border: 1px solid #000
+		margin-left: 4.01041666667vw
+		outline: none
+
+		font-family: 'PTSans', sans-serif
+		font-style: italic
+		font-weight: normal
+		font-size: 22rem
+		line-height: 28rem
+		color: #1e1e1e
+		text-align: center
+		transition: all 0.65s
+		&:focus
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15)
+		&:invalid
+			box-shadow: none
+
+.password, .password-reg, .name-reg, .repassword-reg
+	font-family: 'Bahnschrift', sans-serif
+	font-size: 25rem
+	line-height: 30rem
+	color: #1e1e1e
+
+	margin-top: 4.16666666667vw
+	margin-left: 3.125vw
+	& input
+		width: 12.0833333333vw
+		height: 2.03125vw
+		background-color: #fafafa
+		border-radius: 20px
+		border: 1px solid #000
+		margin-left: 2.5vw
+		font-family: 'PTSans', sans-serif
+		font-style: italic
+		font-weight: normal
+		font-size: 22rem
+		line-height: 28rem
+		color: #1e1e1e
+		text-align: center
+		transition: all 0.65s
+		&:focus
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15)
+
+
+
+.sign-in, .sign-up
+	position: absolute
+	right: 3.125vw
+	bottom: 2.8125vw
+	width: 10.4166666667vw
+	height: 3.75vw
+	background-color: #f9f9f9
+	border: none
+
+	font-family: 'Bahnschrift', sans-serif
+	font-size: 40rem
+	line-height: 48rem
+	color: #000
+
+	transition: all 0.65s
+	&:hover
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25)
+
+.forgot-pas
+	text-decoration: none
+	font-family: 'Bahnschrift', sans-serif
+	font-size: 25rem
+	line-height: 30rem
+	color: #7b7b7b
+	position: absolute
+	left: 3.125vw
+	bottom: 2.8125vw
+	display: flex
+	flex-direction: column
+	&:after
+		content: ''
+		height: 1px
+		width: 0
+		display: block
+		background-color: #7b7b7b
+		position: absolute
+		bottom: -5px
+		left: -2.5px
+		transition: all 0.65s
+	&:hover
+		&:after
+			width: calc(100% + 5px)
+
+.registration-block
+	& h3
+		margin-top: 0.989583333333vw
+
+.name-reg
+	margin-top: 2.13541666667vw
+	& input
+		width: 10.15625vw
+.mail-reg
+	margin-top: 3.17708333333vw
+.password-reg
+	margin-top: 3.69791666667vw
+.repassword-reg
+	margin-top: 3.17708333333vw
+	& input
+		margin-left: 2.91666666667vw
+.reg-robot
+	position: absolute
+	bottom: 7.70833333vw
+	right: 3.125vw
+.forgot-pas
+	bottom: 1.77083333333vw
+
+
+.btns-container
+	height: 33.59375vw
+	position: absolute
+	right: 23.8020833333vw
+	z-index: 1
+.login-button, .registration-button
+	width: 15.3645833333vw
+	height: 5.15625vw
+	background-color: #fff
+	display: flex
+	align-items: center
+	justify-content: center
+	border: 1px solid #D9D9D9
+	box-shadow: 10px 10px 40px #000
+	font-family: 'Bahnschrift', sans-serif
+	font-size: 40rem
+	line-height: 48rem
+	color: #000
+	transition: all 0.3s
+	cursor: pointer
+	&:hover
+		box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4)
+.registration-button
+	margin-top: 1.61458333333vw
+
+.active-block
+	display: block
+.active-btn
+	color: $main-color
+
+
+.reg-errors
+	position: absolute
+	right: 1.09375vw
+	top: 6.14583333333vw
+	width: 15.3645833333vw
+	display: inline-block
+	background-color: #fff
+	border: 1px solid #D9D9D9
+	box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15)
+	& .error
+		font-family: 'Bahnschrift', sans-serif
+		font-size: 25rem
+		line-height: 30rem
+		color: #1e1e1e
+		margin: 1.30208333333vw 0.520833333333vw 1.30208333333vw 1vw
+		position: relative
+		&:before
+			content: ''
+			display: inline-block
+			border-radius: 50%
+			width: 1vw
+			height: 1vw
+			background-color: #F21818
+			margin-right: 5%
+.login-errors
+	position: absolute
+	right: 1.40625vw
+	bottom: 14.375vw
+	width: 15.3645833333vw
+	display: inline-block
+	background-color: #fff
+	border: 1px solid #D9D9D9
+	box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15)
+	& .error
+		font-family: 'Bahnschrift', sans-serif
+		font-size: 25rem
+		line-height: 30rem
+		color: #1e1e1e
+		margin: 0.833vw 1.145833vw
+.reg-errors-2
+	top: 2.60416666667vw
+
+.g-recaptcha
+	margin-left: 3.125vw
+	margin-top: 3.125vw
+.rc-on-login
+	position: absolute
+	bottom: 7.70833333333vw
+	right: 3.125vw
+
+
+footer
+	background-color: #fff
+	width: 100%
+	height: 12.1354166667vw
+	box-shadow: 0 -6px 10px rgba(0, 0, 0, 0.25)
+	display: flex
+	position: relative
+	z-index: 10
+
+	font-family: 'PTSans', sans-serif
+	font-style: normal
+	font-weight: normal
+	font-size: 30rem
+	line-height: 39rem
+.footer-section
+	width: 33.3333333333vw
+	display: flex
+	align-items: center
+	justify-content: center
+	position: relative
+	&:after
+		content: ''
+		width: 1px
+		height: 8.59375vw
+		background-color: #000
+		display: inline
+		position: absolute
+		right: 0
+	&:last-child
+		&:after
+			content: none
+.contacts-title
+	font-weight: bold
+	padding: 0
+	margin: 0
+.contacts-footer-container
+	margin-top: 32rem
+	& p
+		padding: 0
+		margin: 0
+		& span
+			font-family: 'FugazOne', serif
+			line-height: 44rem
+.social-footer
+	& p
+		margin: 0 0 0.885416666667vw 0
+	& a
+		&:after
+			content: ''
+			display: block
+			height: 1px
+			width: 0
+			margin-top: 10px
+			background-color: #000
+			transition: all 0.65s
+		&:hover:after
+			width: 100%
+
+
+.social-links
+	font-family: 'FugazOne', serif
+	line-height: 44rem
+
+.menu-footer
+	display: flex
+	flex-direction: column
+	height: 100%
+	& ul
+		margin: 0
+		padding: 1.04166666667vw 0
+		height: 100%
+		list-style: none
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		& li
+			display: block
+			& a
+				text-decoration: none
+				color: inherit
+				float: left
+				&:after
+					content: ''
+					display: block
+					height: 1px
+					width: 0
+					background-color: #000
+					transition: all 0.65s
+				&:hover:after
+					width: 100%
+.reg-successful
+	position: absolute
+	right: 1.09375vw
+	top: 6.14583333333vw
+	width: 14vw
+	background-color: #fff
+	border: 1px solid #D9D9D9
+	box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15)
+	padding-left: 1vw
+	display: none
+	font-family: 'Bahnschrift', sans-serif
+	font-size: 25rem
+	line-height: 30rem
+	color: $main-color
+	margin: 1.30208333333vw 0.520833333333vw 1.30208333333vw 1vw
+@import "media-log-reg"

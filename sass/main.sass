@@ -1,0 +1,1131 @@
+@import "colors"
+@import "fonts"
+
+html
+	font-size: 0.520833333333vw
+	// font-size: 9.89583333334px
+
+body
+	width: 100%
+	margin: 0
+	background-color: $body-bg-color
+	position: absolute
+	overflow-x: hidden
+	padding-top: 6.77083333333vw
+
+// MENU
+.top-nav
+	width: 100%
+	height: 6.77083333333vw
+	background-color: white
+	box-shadow: 0 4px 25px black
+	z-index: 3
+	position: fixed
+	top: 0
+	transition: height 0.65s
+	.container-top-nav
+		height: 100%
+		padding: 0 8.4375vw
+		display: flex
+		justify-content: space-between
+		align-items: center
+		a
+			text-decoration: none
+			color: $main-color
+	
+.menu
+	opacity: 0
+	transition: all 0.65s
+	ul
+		list-style: none
+		li
+			display: inline
+			a
+				text-transform: uppercase
+				font-family: 'PTSans', sans-serif
+				font-weight: normal
+				font-style: normal
+				font-size: 1.4rem
+				margin-left: 5.52083333333vw
+				position: relative
+				&.menu-items:after
+					content: ''
+					display: inline-block
+					height: 1px
+					width: calc(100% + 4px)
+					background: #000
+					left: -2px
+					bottom: -5px
+					position: absolute
+					transform: scale(0)
+					transition: all 0.65s
+				&:hover
+					&:after
+						transform: scale(1)
+			&:first-child
+				a
+					margin-left: 1vw
+.logo
+	font-size: 7.2rem
+	font-family: 'Bahnschrift', sans-serif
+	display: flex
+	align-items: center
+	text-decoration: none
+	color: $main-color
+	position: relative
+	transition: left 0.65s
+	left: 50%
+	margin-right: -50%
+	transform: translateX(-50%)
+	.to
+		color: #000
+	&:before
+		content: ''
+		display: inline-block
+		position: absolute
+		left: -1.14583333333vw
+		height: 3.54166666667vw
+		width: 1px
+		background: #000
+		transform: scale(0)
+		transition: all 0.65s
+	&:hover
+		&:before	
+			transform: scale(1)
+.logo-img
+	height: 3.54166666667vw
+	width: 3.54166666667vw
+	margin-right: 3rem
+	image
+		height: 3.54166666667vw
+		width: 3.54166666667vw
+
+
+.account
+	display: none
+
+
+
+
+.slider-block1
+	display: inline-block
+	position: relative
+	box-shadow: 0 4px 25px rgba(0, 0, 0, 0.25)
+	z-index: 1
+	height: 45.3125vw
+
+.block1-elements
+	display: flex
+	height: 100%
+	justify-content: center
+	position: absolute
+
+.first-element
+	img
+		// background-size: 100%
+		max-width: 100%
+		width: 100%
+.second-element
+	img
+		// background-size: 100%
+		max-width: 100%
+		width: 100%
+.third-element
+	img
+		// background-size: 100%
+		max-width: 100%
+		width: 100%
+.fourth-element
+	img
+		// background-size: 100%
+		max-width: 100%
+		width: 100%
+
+.text
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin-top: 7.70833333333vw
+	position: absolute
+	h1
+		margin: 0 0 5.36458333333vw 0
+
+		font-family: 'Bahnschrift', sans-serif
+		font-size: 7.0rem
+		color: #DDDDDD
+	p
+		margin: 0
+		
+		font-family: 'PTSans', sans-serif
+		font-style: italic
+		font-weight: normal
+		font-size: 2.2rem
+		color: #F8F8F8
+
+		width: 73.4375vw
+
+
+.start-button
+	background-color: #FBFBFB
+	border-radius: 50px
+	border: 1px solid $main-color
+	width: 18.2291666667vw
+	height: 5.0921875vw
+	position: absolute
+	padding: 0
+	bottom: 10.816091954%
+
+	z-index: 2
+
+	transition: all 0.65s
+	&:hover
+		box-shadow: 0 0 2rem rgba(255, 255, 255, 0.5)
+	a
+		height: 100%
+		width: 100%
+		text-decoration: none
+		display: flex
+		justify-content: center
+		align-items: center
+		color: $main-color
+		font-family: 'Bahnschrift', sans-serif
+		font-size: 3rem
+		line-height: 3.6rem
+
+.button-container
+	width: 100%
+	height: 45.3125vw
+	display: flex
+	justify-content: center
+	position: absolute
+	
+
+.next-block1
+	position: absolute
+	right: 0
+	margin-right: 4.27083333333%
+	opacity: 0.2
+	transition: all 0.65s
+	&:hover
+		opacity: 0.5
+
+.prev-block1
+	position: absolute
+	transform: scaleX(-1)
+	margin-left: 4.27083333333%
+	opacity: 0.2
+	transition: all 0.65s
+	&:hover
+		opacity: 0.5
+.arrow-block1
+	position: absolute
+	z-index: 2
+	top: 25.2604166667vw + 4.53125vw
+	width: 4.53125vw
+	height: 4.53125vw
+	image
+		width: 4.53125vw
+		height: 4.53125vw
+
+
+.block1
+	height: 45.3125vw
+.slider-block1
+	width: 100%
+	height: 100%
+.block1-elements
+	width: 100%
+.next-block1
+	z-index: 2
+.prev-block1
+	z-index: 2
+.slider-block1 .slider-dots 
+	position: absolute
+	bottom: 6.20689655173%
+	right: 6.20689655173%
+	z-index: 1
+.slider-dots
+	.dot
+		background: #C4C4C4 !important
+		height: 0.78125vw
+		width: 0.78125vw
+		border-radius: 50%
+		margin-left: 27px
+		border: 1px solid #C4C4C4 !important
+		display: inline-block
+		&.active-dot
+			background: #FBFBFB !important
+			border: 1px solid #C4C4C4 !important
+			transition: all 1s
+
+
+
+.block2
+	display: flex
+	justify-content: center
+.container-block2
+	width: 94.2708333333vw
+	height: 34.0104166667vw
+	background-color: $block-bg-color
+	position: relative
+	box-shadow: 0 4px 25px rgba(0, 0, 0, 0.25)
+	display: flex
+.text-block2
+	width: 48.125vw
+	right: -56.3020833333vw
+	top: 5.05208333333vw
+	position: absolute
+	display: flex
+	flex-direction: column
+	transition: all 0.65s
+	&:after
+		content: ''
+		display: flex
+		height: 1px
+		width: 52.1354166667vw
+		background: #000
+		position: absolute
+		bottom: -5.52083333333vw
+		align-self: center
+
+
+	h3
+		font-family: 'Bahnschrift', sans-serif
+		font-size: 5rem
+		line-height: 6rem
+		margin: 0
+
+		color: $main-color
+	p
+		font-family: 'PTSans', sans-serif
+		font-style: italic
+		font-weight: normal
+		font-size: 3rem
+		line-height: 3.9rem
+		margin: 2.8125vw 0 0 0
+
+		color: #000
+		a
+			display: inline-block
+			text-decoration: none
+			&:after
+				display: block
+				content: ''
+				height: 1px
+				width: 0
+				background-color: $main-color
+				transition: all 0.65s
+			&:hover:after
+				width: 100%
+			span
+				color: $main-color
+
+
+.strip-block2
+	position: absolute
+	left: -34.6354166667vw
+	display: flex
+	align-self: center
+	align-items: center
+	transition: all 0.65s
+	.strip
+		width: 34.6354166667vw
+		height: 10.7291666667vw
+		image
+			width: 34.6354166667vw
+			height: 10.7291666667vw
+	h2
+		left: 10.3645833333vw
+		position: absolute
+		font-family: 'PTSans', sans-serif
+		font-style: normal
+		font-weight: bold
+		font-size: 6rem
+		line-height: 7.8rem
+		letter-spacing: 0.05em
+		color: #000
+		margin: 0
+.circle-on-strip
+	height: 2.96875vw
+	width: 2.96875vw
+	background-color: $main-color
+	border-radius: 50%
+	position: absolute
+	left: 5.10416666667vw
+.triangle-on-corner
+	width: 0
+	height: 0
+	border-right: 4.73958333333vw solid $main-color
+	border-bottom: 4.73958333333vw solid transparent
+
+	position: absolute
+	right: 0
+	top: 0
+.document-image
+	height: 20.78125vw
+	width: 20.78125vw
+	
+	display: flex
+	align-self: center
+	position: absolute
+	left: 14.4rem
+
+	transition: all 0.65s
+
+	image
+		height: 20.78125vw
+		width: 20.78125vw
+
+
+
+// THIRD BLOCK
+.block3
+	height: 52.03125vw
+	width: 100%
+	background-image: url(../img/bg-image__block3.jpg)
+	background-size: 100% 52.03125vw
+	position: relative
+	display: flex
+	flex-direction: column
+	box-shadow: 0 0.4rem 2.5rem rgba(0, 0, 0, 0.25)
+	z-index: 2
+	h1
+		margin: 5.88541666667vw 0 0 0
+		padding: 0 1rem
+		min-height: 6.875vw
+		background-color: #fff
+		border-radius: 100px
+		box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6)
+
+		opacity: 0.4
+
+		font-family: 'Bahnschrift', sans-serif
+		font-size: 7rem
+		line-height: 8.4rem
+		letter-spacing: 0.03em
+		color: $main-color
+		
+		display: flex
+		position: relative
+		align-self: center
+		align-items: center
+		justify-content: center
+		transition: all 0.65s
+		&:after, &:before
+			content: ''
+			width: 1px
+			height: 13.2291666667vw
+			background-color: #DDDDDD
+
+			display: inline
+			position: absolute
+			right: -9.89583333334vw
+			top: 0.729166666667vw
+		&:before
+			left: -9.89583333334vw
+			
+			
+	.links-block3
+		font-family: 'Bahnschrift', sans-serif
+		font-size: 3rem
+		line-height: 3.6rem
+		letter-spacing: 0.03em
+		color: #DDDDDD
+		text-decoration: none
+
+		position: absolute
+		top: 12.2916666667vw
+		transition: all 0.65s
+		
+.left-link
+	left: -13.0208333333vw
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		right: 0
+		height: 1px
+		width: 0
+		margin-top: 0.625vw
+		background-color: #DDDDDD
+		transition: all 0.65s
+	&:hover:after
+		width: 100%
+.right-link
+	right: -14.6875vw
+	&:after
+		content: ''
+		display: block
+		height: 1px
+		width: 0
+		margin-top: 0.625vw
+		background-color: #DDDDDD
+		transition: all 0.65s
+	&:hover:after
+		width: 100%
+
+
+.circles-reasons
+	position: absolute
+	display: flex
+
+	width: 20.9375vw
+	height: 20.9375vw
+	background-color: rgba(255, 255, 255, 0.9)
+	border-radius: 50%
+	border: 1px solid $main-color
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.1)
+
+	align-items: center
+	justify-content: center
+	text-align: center
+
+	transition: all 0.65s
+	&:hover
+		background-color: #fff
+	h3
+		font-family: 'Bahnschrift', sans-serif
+		font-size: 5rem
+		line-height: 6rem
+		letter-spacing: 0.03em
+		color: #242424
+	
+	
+.left-circle
+	left: -27.7083333333vw
+	bottom: 5.83333333333vw
+.middle-circle
+	align-self: center
+	bottom: 9.47916666666vw
+.right-circle
+	right: -27.7083333333vw
+	bottom: 5.83333333333vw
+
+
+
+// container for 4 and 5 block
+.block4-and-block5
+	position: relative
+	width: 100%
+
+.container-block4-and-block5
+	width: 94.2708333333vw
+	height: 104.270833333vw
+	background-color: $block-bg-color
+	position: relative
+	margin: 0 auto
+	box-shadow: 0 4px 25px rgba(0, 0, 0, 0.25)
+
+
+
+// Fourth block
+.block4
+	height: 44.2708333333vw
+	overflow: hidden
+	display: flex
+	justify-content: center
+	position: relative
+	&:after
+		content: ''
+		height: 1px
+		width: 87.8125vw
+		background-color: #000
+		display: block
+		position: absolute
+		bottom: 0
+
+.card
+	width: 18.5416666667vw
+	height: 31.875vw
+	background-color: #fff
+	border: 1px solid $border-color
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2)
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin: 0 2.5vw
+	will-change: transform
+	transition: transform 0.45s ease-in-out
+	.slide-content
+		width: 100%
+		height: 100%
+		transition: transform 0.45s ease-in-out
+		h1
+			margin: 1.45833333333vw 0 0 0
+
+			font-family: 'Bahnschrift', sans-serif
+			font-size: 3.8rem
+			line-height: 4.6rem
+			font-weight: 
+			text-align: center
+			text-shadow: $main-color 1px 1px 0, $main-color 1px 1px 0, $main-color 1px 1px 0, $main-color 1px 1px 0
+			color: $main-color
+		.submenu
+			height: 22.5vw
+			display: flex
+			flex-direction: column
+			align-items: center
+			padding-top: 1.66666666667vw
+			padding-bottom: 1.45833333333vw
+			&:after
+				content: ''
+				height: 0
+				border: 1px solid rgba(0, 0, 0, 0.7)
+				width: 13.125vw
+				box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+				bottom: 0
+			&:before
+				content: ''
+				height: 0
+				border: 1px solid rgba(0, 0, 0, 0.7)
+				width: 13.125vw
+				box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+			.card-links
+				display: flex
+				flex-direction: column
+				height: 100%
+				justify-content: space-between
+				align-items: center			
+				a
+					position: relative
+					text-decoration: none
+					font-family: 'PTSans', sans-serif
+					font-style: normal
+					font-weight: normal
+					font-size: 2rem
+					line-height: 2.6rem
+					text-align: center
+					color: $second-text-color
+					&:last-child
+						margin-bottom: 1.97916666667vw
+					&:first-child
+						margin-top: 1.97916666667vw
+					&:after
+						content: ''
+						display: block
+						height: 1px
+						width: calc(100% + 6px)
+						background: $second-text-color
+						left: 3px
+						position: absolute
+						transform: scale(0)
+						transition: all 0.65s
+					&:hover
+						&:after
+							transform: scale(1)
+.services
+	padding-top: 5.41666666667vw
+	width: 100%
+	height: 100%
+.bg-under-cards
+	height: 33.6458333333vw
+	width: 83.125vw
+	background-color: #F6F6F6
+	position: absolute
+	top: 4.53125vw
+
+
+.card.center-slide
+	transform: scale(1.12359550562) translateY(-0.8vw)
+
+.active .card
+	transition: all 0.65s
+.arrows-block4
+	position: absolute
+	bottom: 2.19947916667vw
+	display: flex
+	justify-content: center
+	height: 2.01927083333vw
+	z-index: 1
+
+.prev-block4
+	transform: scaleX(-1)	
+.next-block4
+	margin-left: 4.94791666667vw
+
+.arrow-block4
+	transition: opacity 0.65s
+	image
+		width: 7.39583333333vw
+		height: 2.03125vw
+	&:hover
+		opacity: 0.6
+
+
+.img-under-cards
+	height: 11.0416666667vw
+	width: 11.0416666667vw
+	
+	position: absolute
+	bottom: 10.2rem
+	right: 24rem 
+	image
+		height: 11.0416666667vw
+		width: 11.0416666667vw
+
+.man-on-block4
+	height: 5.10416666667vw
+	width: 5.10416666667vw
+
+	position: absolute
+	bottom: 0
+	left: 12.9166666667vw
+	image
+		height: 5.10416666667vw
+		width: 5.10416666667vw
+.services .slider-dots 
+	position: absolute
+	z-index: 1
+	top: 0.885416666667vw
+	display: flex
+	width: 100%
+	justify-content: center
+
+// Fifth
+.block5
+	position: relative
+	width: 100%
+	height: 56.4583333333vw
+	display: flex
+	justify-content: center
+
+.questions
+	width: 58.4375vw
+	height: 40.8333333333vw
+	background-color: #F5F6F6
+	border-bottom-right-radius: 5vw
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.25)
+	position: relative
+
+	display: flex
+	align-self: center
+	flex-direction: column
+	z-index: 1
+	h3
+		margin: 0 0 0 1.5625vw
+
+		position: relative
+		font-family: 'Bahnschrift', sans-serif
+		font-size: 4.2rem
+		line-height: 5rem
+		color: $main-color
+		z-index: 1
+		&:after
+			content: ''
+			left: -1.04166666667vw
+			bottom: 0
+			right: 0
+			margin: auto
+			top: 0
+
+			height: calc(100% + 7px)
+			position: absolute
+			background-color: #fff
+			filter: blur(25px)
+			z-index: -1
+			border-bottom-right-radius: 200px
+	.question-title
+		margin-top: 1.97916666667vw
+		width: 53rem
+	.write-to-us
+		width: 30rem
+		margin-top: 1.54166666667vw
+
+	form
+		display: block
+		margin-top: 2.08333333333vw
+		margin-left: 4.27083333333vw
+		p
+			font-family: 'PTSans', sans-serif
+			margin: 0
+			font-style: normal
+			font-weight: normal
+			font-size: 2.2rem
+			line-height: 2.8rem
+			color: #313131
+			vertical-align: middle
+.question
+	width: 100%
+	height: 100%
+	padding: 0
+	border: none
+	transform: scaleX(-1)
+	resize: none
+	overflow: hidden
+	font-family: 'Bahnschrift', sans-serif
+	font-size: 3rem
+	line-height: 3.6rem
+	color: $second-text-color
+
+textarea, input
+	outline: none
+	
+
+.problem-outer
+	margin-top: 1.04166666667vw
+	border: 1px solid $border-color
+	border-top-left-radius: 30px
+	width: 42.6041666667vw
+	height: 6.97916666667vw
+	background: #fff
+	padding: 0.520833333333vw
+	display: inline-block
+	overflow: auto
+	transform: scaleX(-1)
+	transition: all 0.65s
+	&:focus-within
+		border: 1px solid $main-color
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25)
+		
+	
+
+
+
+
+.problem-label, .contacts-block5
+	&:before
+		content: ''
+		width: 1.45833333333vw
+		height: 1.45833333333vw
+		border-radius: 50%
+		position: absolute
+		left: 1.5625vw
+		display: inline-block
+		background-color: $main-color
+
+
+.name-block5, .mail-or-tel-block5
+	border-top-right-radius: 30px
+	border: 1px solid $border-color
+	margin-left: 2.76041666667vw
+	width: 15.5208333333vw
+	height: 2.60416666667vw
+	font-family: 'Bahnschrift', sans-serif
+	font-size: 3rem
+	line-height: 3.6rem
+	color: $second-text-color
+	transition: all 0.65s
+	&:focus
+		border: 1px solid $main-color
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25)
+
+
+
+.name-block5
+	margin-top: 0.920833333333vw
+.mail-or-tel-block5
+	margin-top: 1.83125vw
+
+.contacts-container-block5
+	position: relative
+.contacts-block5
+	margin-top: 1.75885416667vw !important
+	&:after
+		content: ''
+		width: 1px
+		height: calc(100% - 1.45833333333vw - 1.5625vw)
+		background-color: $main-color
+		display: block
+		position: absolute
+		bottom: calc(1.30208333333vw - 1px)
+
+	&:before
+		left: -1.45833333333 - 1.26197916667vw
+
+
+.name-block5-outer, .mail-or-tel-block5-outer
+	&:before
+		content: ''
+		height: 1px
+		width: 3.02083333333vw
+		background-color: $main-color
+		position: relative
+		display: inline-block
+		vertical-align: middle
+		margin-right: 0.444791666667vw
+
+.send-block5
+	background: #fff
+	border: 1px solid $main-color
+	border-radius: 50px
+	width: 11.25vw
+	height: 2.41197916667vw
+	position: absolute
+	bottom: 3.64583333333vw
+	right: 4.58333333333vw
+
+	font-family: 'Bahnschrift', sans-serif
+	font-size: 3rem
+	line-height: 3.6rem
+	color: $main-color
+	transition: all 0.65s
+	&:hover
+		box-shadow: 0 0 20px rgba(255, 255, 255, 1)
+
+.tools
+	position: absolute
+	height: 14.1666666667vw
+	width: 14.1666666667vw
+	image
+		height: 14.1666666667vw
+		width: 14.1666666667vw
+.left-tools
+	transform: rotate(113.76deg)
+	filter: blur(5px)
+	left: 10.7291666667vw
+	bottom: 13.1770833333vw
+	z-index: 0
+.right-tools
+	top: 4.33489583333vw
+	right: 14.8317708333vw
+	transform: rotate(170.64deg)
+	z-index: 1
+.lying-man
+	position: absolute
+	bottom: 0
+	left: 0
+	width: 7.1875vw
+	height: 7.1875vw
+	z-index: 1
+	image
+		width: 7.1875vw
+		height: 7.1875vw
+
+// Footer
+footer
+	background-color: #fff
+	width: 100%
+	height: 12.1354166667vw
+	box-shadow: 0 -6px 10px rgba(0, 0, 0, 0.25)
+	display: flex
+	position: relative
+	z-index: 10
+
+	font-family: 'PTSans', sans-serif
+	font-style: normal
+	font-weight: normal
+	font-size: 3rem
+	line-height: 3.9rem
+.footer-section
+	width: 33.3333333333vw
+	display: flex
+	align-items: center
+	justify-content: center
+	position: relative
+	&:after
+		content: ''
+		width: 1px
+		height: 8.59375vw
+		background-color: #000
+		display: inline
+		position: absolute
+		right: 0
+	&:last-child
+		&:after
+			content: none
+.contacts-title
+	font-weight: bold
+	padding: 0
+	margin: 0
+.contacts-footer-container
+	margin-top: 3.2rem
+	& p
+		padding: 0
+		margin: 0
+		& span
+			font-family: 'FugazOne', sans-serif
+			line-height: 4.4rem
+.social-footer
+	& p
+		margin: 0 0 0.885416666667vw 0
+	& a
+		&:after
+			content: ''
+			display: block
+			height: 1px
+			width: 0
+			margin-top: 10px
+			background-color: #000
+			transition: all 0.65s
+		&:hover:after
+			width: 100%
+
+
+.social-links
+	font-family: 'FugazOne', sans-serif
+	line-height: 4.4rem
+
+.menu-footer
+	// height: 16.5rem
+	display: flex
+	flex-direction: column
+	height: 100%
+	& ul
+		margin: 0
+		padding: 1.04166666667vw 0
+		height: 100%
+		list-style: none
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		& li
+			display: block
+			& a
+				text-decoration: none
+				color: inherit
+				float: left
+				&:after
+					content: ''
+					display: block
+					height: 1px
+					width: 0
+					background-color: #000
+					transition: all 0.65s
+				&:hover:after
+					width: 100%
+		
+
+//Button to up
+.go-to-up
+	width: 2.8125vw
+	height: 2.8125vw
+	background-color: #fff
+	border: 1px solid $main-color
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25)
+	border-radius: 50%
+	z-index: 10
+	position: fixed
+	right: 3.80208333333vw
+	bottom: 3.80208333333vw
+	visibility: hidden
+	opacity: 0
+	transition: visibility 0.65s, opacity 0.65s
+	& a
+		width: 100%
+		height: 100%
+		display: flex
+		align-items: center
+		justify-content: center
+		position: relative
+		.arrow-go-to-up
+			width: 1.25vw
+			height: 1.25vw
+			border-right: 1px solid $main-color
+			border-top: 1px solid $main-color
+			transform: rotate(-45deg)
+			position: absolute
+			bottom: 15%
+	
+.go-to-up__visible
+	opacity: 0.5
+	visibility: visible
+	&:hover
+		opacity: 1
+
+
+
+.slides-wrapper
+	width: 100%
+	height: 100%
+	position: relative
+
+.next-slides-wrapper
+	position: absolute
+	top: 0
+	width: 100%
+	height: 100%
+
+.send-error, .send-successful
+	background-color: rgba(0, 0, 0, 0.8)
+	width: 100%
+	height: 100%
+	position: fixed
+	top: 0
+	z-index: 20
+	display: none
+	.window
+		width: 26.0416666667vw
+		height: 7.8125vw
+		margin: 0 auto
+		margin-top: 10.3645833333vw
+		background: #fff
+		display: flex
+		position: relative
+		justify-content: center
+		padding-top: 3.64583333333vw
+		font-family: 'Bahnschrift', sans-serif
+		font-size: 3rem
+		.close
+			position: absolute
+			right: 1.5625vw
+			bottom: 1.5625vw
+			background-color: #F9F9F9
+			border-radius: 0
+			border: none
+			width: 6.77083333333vw
+			height: 1.82291666667vw
+			cursor: pointer
+			font-size: 2rem
+			transition: box-shadow 0.65s
+			&:hover
+				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15)
+.send-error
+	.window
+		color: $error
+		.possible-reason
+			position: absolute
+			bottom: 1.5625vw
+			left: 1.5625vw
+			font-size: 1rem
+			width: 10.3645833333vw
+.send-successful
+	.window
+		color: $main-color
+.errors
+	position: absolute
+	right: 11.9791666667vw
+	top: 5.20833333333vw
+	background: #fff
+	width: 16.667vw
+	font-size: 3rem
+	line-height: 6rem
+	color: #1e1e1e
+	font-family: 'Bahnschrift', sans-serif
+	box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15)
+	.error
+		display: flex
+		align-items: center
+		&:before
+			content: ''
+			width: 0.78125vw
+			height: 0.78125vw
+			border-radius: 50%
+			background-color: $error
+			display: inline-block
+			position: relative
+			margin: 0 10px
+
+
+.preloader
+	height: 100%
+.load-line
+	opacity: 1
+	transition: opacity 0.65s
+	width: 10.3645833333vw
+	height: 7px
+	background-color: $body-bg-color
+	position: absolute
+	top: calc(50vh + 60px)
+	left: 50%
+	margin-right: -50%
+	transform: translateX(-50%)
+.progress
+	position: absolute
+	left: 0
+	height: 100%
+	background-color: $main-color
+
+
+
+
+@import "media"
